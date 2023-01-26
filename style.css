@@ -2,13 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer {
+    background-color: #1F2937;
+    margin: 0;
+    color: white;
 }
 
 .header {
-    background-color: #1F2937;
-    margin: 0;
-    padding: 0;
-    color: white;
+	width: 100%;
+	height: auto;
 }
 
 .nav-bar {
@@ -20,11 +26,10 @@ body {
     padding: 16px 32px;
 }
 
-.links {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+ul {
+	list-style-type: none;
+	display: flex;
+	gap: 20px;
 }
 
 a {
@@ -32,9 +37,10 @@ a {
     color: rgba(255, 255, 255, 0.82);
 }
 
-.logo {
-    font-weight: bolder;
-    font-size: large;
+.nav-bar-left {
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F8FB;
 }
 
 .about {
@@ -42,10 +48,109 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
+}
+
+.about-left, .about-right {
+	width:50%;
+	height:auto;
+	flex:1;
+	align-items:center;
 }
 
 .main-text {
     font-weight: bolder;
     font-size: 48px;
+}
 
+.sub-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+	background-color: #3882F6;
+	color: white;
+	font-weight: bold;
+	padding: 8px 16px;
+	text-align: center;
+	border-radius: 8px;
+	border: 2px solid white;
+}
+
+.info{
+	display:flex;
+	flex-direction:column;
+	background-color: green;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 5%;
+}
+
+.info-title {
+	font-weight:bolder;
+	font-size: 36px;
+	color: #1F2937;
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+
+.info-container {
+	dislay: flex;
+	flex-dirextion:row;
+	margin:0;
+	padding:0;
+	gap: 10px;
+}
+
+.info-container li img {
+	border: 2px solid #3882F6;
+	border-radius:8px;
+	width: 100%;
+}
+
+.quote {
+	background-color:#E7E5EB;
+	margin:0;
+	padding:5%;
+}
+
+.quote-text {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.quote-author {
+	font-weight: bold;
+	text-align: right;
+}
+
+.signup {
+	margin:0;
+	padding:5%;
+}
+
+.signup-container {
+	box-sizing: border-box;
+	padding: 8px 16px;
+	color: white;
+	background-color: #3882F6;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 8px;
+}
+
+.signup-title {
+	font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
 }
